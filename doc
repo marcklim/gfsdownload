@@ -1,0 +1,18 @@
+NOAA info here: https://nomads.ncep.noaa.gov/txt_descriptions/fast_downloading_grib.shtml
+
+GRIB parameters I'm interested in
+- PRMLS - pressure at sea level
+- UGRD:10 m above ground
+- VGRD:10 m above ground
+- TMP:surface
+
+:PRMSL:|:TMP:surface:|:UGRD:10 m above ground:|:VGRD:10 m above ground:
+
+
+
+data pre may 2020
+https://www.ncei.noaa.gov/data/global-forecast-system/access/historical/analysis/202005/20200514/gfsanl_3_20200514_0000_000.inv
+https://www.ncei.noaa.gov/data/global-forecast-system/access/historical/analysis/202005/20200514/gfsanl_3_20200514_0000_000.grb2
+data post may 2020
+https://www.ncei.noaa.gov/data/global-forecast-system/access/grid-004-0.5-degree/analysis/202105/20210501/gfs_4_20210501_0000_000.grb2.inv
+https://www.ncei.noaa.gov/data/global-forecast-system/access/grid-004-0.5-degree/analysis/202105/20210501/gfs_4_20210501_0000_000.grb2
