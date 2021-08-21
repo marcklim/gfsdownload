@@ -52,7 +52,7 @@ foreach $_ (@ARGV) {
       last SWITCH;
     }
     print STDERR "error: multiple URLs found\n";
-    sleep(5);
+    sleep(1);
     exit 8;
   }
 }
@@ -107,17 +107,17 @@ if ($range ne "") {
    $err = $err >> 8;
    if ($err != 0) {
       print STDERR "error in getting file $err\n";
-      sleep(20);
+      sleep(1);
       exit $err;
    }
    if (! rename "$file.tmp",  "$file") {
-      sleep(30);
+      sleep(1);
    }
 }
 else {
-  sleep(10);
+  sleep(1);
   print STDERR "No download! No matching grib fields\n";
-  sleep(30);
+  sleep(1);
   exit 8;
 }
 

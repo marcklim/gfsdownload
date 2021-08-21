@@ -75,9 +75,9 @@ while (<In>) {
 
 #    check for missing file
      if (! defined($num) || "$num" eq "") {
-        sleep(5);
+        sleep(1);
         print STDERR "ERROR: Bad URL or not wgrib inventory: $file\n";
-        sleep(3);
+        sleep(1);
         exit 7;
      }
 
@@ -107,12 +107,12 @@ if ($last != 0) {
     }
 }
 else {
-  sleep(5);
+  sleep(1);
   print STDERR "missing wgrib inventory\n";
-  sleep(3);
+  sleep(1);
   if (! -t STDIN) {
 #   not a terminal .. sleep longer
-    sleep(60);
+    sleep(1);
   }
   exit 6;
 }
